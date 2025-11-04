@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
+import android.content.Intent; // Added import
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private TextView balanceTextView;
     private EditText bankNameInput, accountNumberInput, withdrawalAmountInput;
-    private Button addBankButton, withdrawButton;
+    private Button addBankButton, withdrawButton, goToMainButton; // Add button variable
     private ListView withdrawalHistoryList;
 
     private FirebaseFirestore db;
@@ -39,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         addBankButton = findViewById(R.id.addBankButton);
         withdrawButton = findViewById(R.id.withdrawButton);
         withdrawalHistoryList = findViewById(R.id.withdrawalHistoryList);
+        goToMainButton = findViewById(R.id.goToMainButton); // Connect button
 
         db = FirebaseFirestore.getInstance();
 
@@ -57,6 +59,12 @@ public class HomeActivity extends AppCompatActivity {
 
         addBankButton.setOnClickListener(v -> saveBankDetails());
         withdrawButton.setOnClickListener(v -> makeWithdrawal());
+
+        // Go to MainActivity action
+        goToMainButton.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void loadUserData() {

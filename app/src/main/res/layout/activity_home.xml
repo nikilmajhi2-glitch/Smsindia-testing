@@ -90,5 +90,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:dividerHeight="1dp" />
+
+        <!-- New Go to Main button -->
+        <Button
+            android:id="@+id/goToMainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Main"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
 </ScrollView>
