@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/balanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance: ₹0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add / Update Bank Details"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/bankNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bank Name" />
+
+        <EditText
+            android:id="@+id/accountNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/addBankButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Bank Details"
+            android:layout_marginTop="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make Withdrawal"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/withdrawalAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/withdrawButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"
+            android:layout_marginTop="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdrawal History"
+            android:textStyle="bold" />
+        
+        <ListView
+            android:id="@+id/withdrawalHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+</ScrollView>

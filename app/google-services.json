@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "977708454299",
+    "project_id": "rupeedesk-135aa",
+    "storage_bucket": "rupeedesk-135aa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977708454299:android:ec51c62c8053649a62513e",
+        "android_client_info": {
+          "package_name": "com.rupeedesk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977708454299-mv7pggbkrltp78sg7vid4di7brhkf0b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC-5NIk6hTxU6kDDCaoJvlWc9dchXUXwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977708454299-mv7pggbkrltp78sg7vid4di7brhkf0b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
